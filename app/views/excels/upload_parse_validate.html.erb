@@ -1,0 +1,46 @@
+<% unless @errors.empty? %>
+<h1>Failure</h1>
+				<ul>
+					<% @errors.each do |error| %>
+					<li>
+						Problems in line number <%= error[0] %>:
+						<% error[1].full_messages.each do |msg|%>
+						<p><%= msg %> </p>
+						<%end%>
+					</li>
+
+				<% end %>
+				</ul>
+<%else%>
+<h1>Success</h1>
+<% end %>
+<%=form_tag('/excels/save') %>
+    <table>
+      <tr>
+        <th>Reference Number</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Age</th>
+      </tr>
+
+    <% @employee.each do |employee| %>
+      <tr>
+        <td><%= employee.ref_no%></td>
+        <td><%= employee.fname %></td>
+        <td><%= employee.lname %></td>
+        <td><%= employee.age %></td>
+      </tr>
+      <tr>
+        <td><%= hidden_field_tag("employees[][ref_no]", employee.ref_no) %></td>
+        <td><%= hidden_field_tag("employees[][fname]", employee.fname) %></td>
+        <td><%= hidden_field_tag("employees[][lname]", employee.lname) %></td>
+        <td><%= hidden_field_tag("employees[][age]", employee.age) %></td>
+      </tr>
+    <% end %>
+    </table>
+    <% if @errors.empty? %>
+        <p>
+            <%= submit_tag "Save Employees" %>
+        </p>
+    <% end %>
+</form>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails excel_import_app: production" product="" version="" jdbc-version="" driver-version="" uuid="e6334604-64b1-4446-abfb-253bc5178a4e">
+    <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+    <jdbc-url>jdbc:postgresql:excel_import_app_production</jdbc-url>
+    <user-name>excel_import_app</user-name>
+    <libraries>
+      <library>
+        <url>file://$USER_HOME$/.RubyMine32/config/jdbc-drivers/postgresql-driver-license.txt</url>
+      </library>
+      <library>
+        <url>file://$USER_HOME$/.RubyMine32/config/jdbc-drivers/postgresql-9.1-901.jdbc4.jar</url>
+      </library>
+    </libraries>
+  </data-source>
+  <data-source source="LOCAL" name="Rails excel_import_app: test" product="" version="" jdbc-version="" driver-version="" uuid="1a5a5d67-91c6-4111-8997-a54a702b900f">
+    <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+    <jdbc-url>jdbc:postgresql:excel_import_app_test</jdbc-url>
+    <user-name>excel_import_app</user-name>
+    <libraries>
+      <library>
+        <url>file://$USER_HOME$/.RubyMine32/config/jdbc-drivers/postgresql-driver-license.txt</url>
+      </library>
+      <library>
+        <url>file://$USER_HOME$/.RubyMine32/config/jdbc-drivers/postgresql-9.1-901.jdbc4.jar</url>
+      </library>
+    </libraries>
+  </data-source>
+  <data-source source="LOCAL" name="Rails excel_import_app: development" product="" version="" jdbc-version="" driver-version="" uuid="e13954b9-801b-43ae-a7a5-6947b90f3cb4">
+    <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+    <jdbc-url>jdbc:postgresql:excel_import_app_development</jdbc-url>
+    <user-name>excel_import_app</user-name>
+    <libraries>
+      <library>
+        <url>file://$USER_HOME$/.RubyMine32/config/jdbc-drivers/postgresql-driver-license.txt</url>
+      </library>
+      <library>
+        <url>file://$USER_HOME$/.RubyMine32/config/jdbc-drivers/postgresql-9.1-901.jdbc4.jar</url>
+      </library>
+    </libraries>
+  </data-source>
+</component>
